@@ -29,6 +29,10 @@ public class Application
                     Console.WriteLine("upcoming...");
                     Task.Delay(500);
                     break;
+                case "3":
+                    Console.WriteLine(PiHelper.GetPi());
+                    Task.Delay(500);
+                    break;
                 case "0":
                     exitRequested = true;
                     break;
@@ -37,5 +41,7 @@ public class Application
                     break;
             }
         }
+
+        
     }
 }

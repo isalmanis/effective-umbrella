@@ -1,6 +1,9 @@
-﻿namespace Umbrella;
+﻿using System.Globalization;
 
-public class PiHelper
+namespace Umbrella;
+
+public static class PiHelper
 {
-    
+    // Take 3. into account precision is now 8
+    public static string GetPi() => Math.PI.ToString(CultureInfo.InvariantCulture)[..10];
 }
